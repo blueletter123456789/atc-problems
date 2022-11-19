@@ -9,13 +9,13 @@ for _ in range(m):
     u -= 1
     v -= 1
     a[u][v] = a[v][u] = True
-  
+
 for _ in range(m):
     u, v = map(int, input().split())
     u -= 1
     v -= 1
     b[u][v] = b[v][u] = True
-  
+
 ans = False
 for p in itertools.permutations(range(n)):
     ok = True
